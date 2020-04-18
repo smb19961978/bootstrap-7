@@ -30,6 +30,9 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div> 
+                <div class="col col-md-4 col-xl-2">
+                    <a class="btn btn-info btn-lg mt-4" href="#reserveForm">Reserve Campsite</a>
+                </div>
             </div>
         </div>
     </header>
@@ -75,8 +78,13 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>   
+                    <img class= "d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="image of camp grounds"/>
+                </div>
             </div>
         </div>    
     </div>
@@ -99,6 +107,45 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="row form-group">
+                                <label class="col-form-label col col-sm-6" for="numCampers">Number of Campers</label>
+                                <div class="col-sm-6">
+                                    <select class="form-control" id="numCampers" name="numCampers" placeholder="Select">
+                                        <option selected>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-form-label col col-sm-6" for="date">Date</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="date">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -116,7 +163,7 @@
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
                     <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
