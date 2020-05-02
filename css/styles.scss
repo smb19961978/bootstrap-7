@@ -5,9 +5,65 @@ $color-mid: #901CAD;
 $color-dark: #60106b;
 $color-transparent-black: rgba(0, 0, 0, 0.5);
 
+$body-font:"Open Sans", sans-serif; 
+$header-font: "Lobster", cursive; 
+
 header {
     h2 {
         color: $color-pale;
     }
 }
 
+body{
+    font-family: $body-font;
+}
+
+h1, h2, h3{
+    font-family: $header-font;
+}
+
+h2{
+    color: $color-primary;
+}
+
+header {
+    h2{
+        color: $color-pale;
+    }
+}
+
+.site-footer{
+    background-image: linear-gradient($color-pale, white);
+    padding: 20px 0;
+}
+
+.jumbotron-fluid{
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+    color: white;
+    margin: 0;
+}
+
+.row-content{
+    padding:50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar-dark{
+    background-color: $color-mid;
+}
+
+.carousel-caption {
+    background-color: $color-transparent-black;
+}
+
+.carousel {
+    border: soli $color-secondary;
+}
+
+#carouselButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
