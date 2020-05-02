@@ -14,3 +14,23 @@ $(function(){
         };
     });
 });
+
+//this opens and closes the reserve button//
+$(function(){
+    $("#reserveButton").click(function(){
+        $("#reserveModal").collapse("show")
+    });
+    $(".close").click(function(){
+        $("#reserveModal").collapse("hide")
+    });
+});
+
+//this opens and closes the login button//
+$(function(){
+    $("#loginModal").click(function(){
+        $(".modal-body").collapse("show")
+    });
+    $("#loginButton").click(function(){
+        $("#loginModal").collapse("hide")
+    });
+});
